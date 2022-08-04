@@ -196,7 +196,29 @@ main {
 /* section (4) styles */
 /* ================== */
 
+.section-4 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.section-4 .container {
+    background-color: var(--btn-color);
+    height: 150px;
+    width: min(1100px, 90%);
+    font-size: 25px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section-4 .container>button {
+    border: 3px solid #fff;
+}
 
 /* ============= */
 /* footer styles */
