@@ -1,5 +1,5 @@
 /* ========================== */
-/* some globale styles styles */
+/* some globale styles */
 /* ========================== */
 
 @font-face {
@@ -7,12 +7,19 @@
     src: url(./assets/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto Light';
+    src: url(./assets/Roboto-Light.ttf);
+}
+
 :root {
     --dark-bg-color: #1f2937;
     --quote-section-bg-color: #E5E7EB;
     --btn-color: #3882F6;
+
     --hdr-ht: 50px;
     --footer-ht: 60px;
+
     --gap: 20px;
     --font: 'Roboto';
 }
@@ -160,7 +167,30 @@ main {
 /* section (3) styles */
 /* ================== */
 
+.section-3 {
+    background-color: var(--quote-section-bg-color);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.quote {
+    position: relative;
+    max-width: 1000px;
+    padding: var(--gap);
+    font-size: 36px;
+    font-family: 'Roboto Light';
+    font-style: italic;
+    color: #1F2937;
+}
+
+.quote strong {
+    position: absolute;
+    right: var(--gap);
+    font-size: 25px;
+    font-family: var(--font);
+}
 
 /* ================== */
 /* section (4) styles */
