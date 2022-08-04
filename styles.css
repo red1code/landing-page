@@ -1,3 +1,7 @@
+/* ========================== */
+/* some globale styles styles */
+/* ========================== */
+
 @font-face {
     font-family: 'Roboto';
     src: url(./assets/Roboto-Regular.ttf);
@@ -36,6 +40,10 @@ ul {
     padding: 0;
 }
 
+/* ============= */
+/* header styles */
+/* ============= */
+
 header {
     height: var(--hdr-ht);
     background-color: var(--dark-bg-color);
@@ -60,9 +68,109 @@ nav ul a {
     color: #E5E7EB;
 }
 
+/* =========== */
+/* main styles */
+/* =========== */
+
 main {
     flex: 1;
 }
+
+/* ================== */
+/* section (1) styles */
+/* ================== */
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--gap) * 2);
+    padding: 100px 200px;
+    background-color: var(--dark-bg-color);
+}
+
+.left h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.left p,
+.signup-btn {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: var(--gap);
+}
+
+.signup-btn {
+
+    padding: 10px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    filter: brightness(.9);
+}
+
+.section-1 .right img {
+    width: 100%;
+}
+
+/* ================== */
+/* section (2) styles */
+/* ================== */
+
+.section-2 {
+    padding: calc(var(--gap) * 3) 200px;
+    text-align: center;
+}
+
+.section-2 h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.section-2 .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--gap) * 2);
+    margin-block: calc(var(--gap) * 3);
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid var(--btn-color);
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.card p {
+    font-size: 19px;
+    color: var(--dark-bg-color);
+    width: 200px;
+}
+
+/* ================== */
+/* section (3) styles */
+/* ================== */
+
+
+
+/* ================== */
+/* section (4) styles */
+/* ================== */
+
+
+
+/* ============= */
+/* footer styles */
+/* ============= */
 
 footer {
     height: var(--footer-ht);
